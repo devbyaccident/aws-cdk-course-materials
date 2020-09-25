@@ -7,7 +7,7 @@
 		"context": "..",
 		// Update 'VARIANT' to pick a Python version. Rebuild the container 
 		// if it already exists to update. Available variants: 3, 3.6, 3.7, 3.8 
-		"args": { "VARIANT": "3" }
+		"args": { "VARIANT": "3.8" }
 	},
 
 	// Set *default* container specific settings.json values on container create.
@@ -29,15 +29,12 @@
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
-		"ms-python.python"
+		"ms-python.python",
+		"amazonwebservices.aws-toolkit-vscode",
+		"vtrois.gitmoji-vscode",
+		"VisualStudioExptTeam.vscodeintellicode"
 	]
 
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "zsh",
-
-	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
-	// "remoteUser": "vscode"
+	// Cause I like 'cls' better than 'clear'
+	"postCreateCommand": "echo 'alias cls=clear' >> ~/.zshrc && source ~/.zshrc"
 }
