@@ -30,6 +30,7 @@
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
 		"ms-python.python",
+		"ms-python.vscode-pylance",
 		"amazonwebservices.aws-toolkit-vscode",
 		"vtrois.gitmoji-vscode",
 		"VisualStudioExptTeam.vscodeintellicode"
