@@ -19,8 +19,10 @@ setuptools.setup(
     packages=setuptools.find_packages(where="demo_app"),
 
     install_requires=[
-        "aws-cdk.core==1.61.1",
-        "aws-cdk.aws_s3==1.61.1",
+        "aws-cdk.core==1.69.0",
+        "aws-cdk.aws_s3==1.69.0",
+        "aws-cdk.aws_lambda==1.69.0",
+        "aws-cdk.aws_s3_notifications==1.69.0",
     ],
 
     python_requires=">=3.6",

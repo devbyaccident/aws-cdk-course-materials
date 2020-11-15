@@ -6,7 +6,7 @@ with open("README.md") as fp:
 
 
 setuptools.setup(
-    name="demo_app",
+    name="aspect_demo",
     version="0.0.1",
 
     description="An empty CDK Python app",
@@ -15,12 +15,11 @@ setuptools.setup(
 
     author="author",
 
-    package_dir={"": "demo_app"},
-    packages=setuptools.find_packages(where="demo_app"),
+    package_dir={"": "aspect_demo"},
+    packages=setuptools.find_packages(where="aspect_demo"),
 
     install_requires=[
-        "aws-cdk.core==1.61.1",
-        "aws-cdk.aws_s3==1.61.1",
+        "aws-cdk.core==1.69.0",
     ],
 
     python_requires=">=3.6",
